@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SY8120B1ABC
+D 2A Synchronous Step-Down Voltage Regulator, Adjustable Output Voltage, 4.5-17V Input Voltage, SOT-23-6
+K step-down dcdc voltage regulator
+F https://datasheet.lcsc.com/szlcsc/1811081220_Silergy-Corp-SY8120B1ABC_C88474.pdf
+$ENDCMP
+#
+#End Doc Library
