@@ -1,7 +1,7 @@
 Reference, Quantity, Value, Footprint, Datasheet, LCSC, LCSC EUR, LCSC URL, Mouser, Mouser EUR, Mouser URL
 C10 C15 C4 ,3,"4u7","Capacitor_SMD:C_0402_1005Metric"," ","https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21A226MOQNNNE_22uF-226-20-16V_C98190.html","","","","",""
 C11 C14 ,2,"4p7","Capacitor_SMD:C_0402_1005Metric"," "
-C16 C20 C23 C3 C1 C17 C30 C33 C36 C38 C39 C31 C34 C32 C35 C37 C41 C42 C40 C43 ,20,"100n","Capacitor_SMD:C_0402_1005Metric"," "
+C16 C20 C23 C3 C1 C17 C30 C33 C36 C38 C39 C31 C34 C32 C35 C37 C41 C42 C40 C43 C44 ,21,"100n","Capacitor_SMD:C_0402_1005Metric"," "
 C19 C8 C13 C18 C9 C5 C2 ,7,"220n","Capacitor_SMD:C_0402_1005Metric"," "
 C21 C22 ,2,"22p","Capacitor_SMD:C_0402_1005Metric"," "
 C24 ,1,"10u","Capacitor_SMD:C_0402_1005Metric"," ","https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21A226MOQNNNE_22uF-226-20-16V_C98190.html","","","","",""
@@ -39,7 +39,7 @@ U2 ,1,"XC6206P25","Package_TO_SOT_SMD:SOT-23","https://datasheet.lcsc.com/szlcsc
 U4 ,1,"SPI Flash W25Q128JVSIQ","ecp5board:SOA008-150-208mil","https://datasheet.lcsc.com/szlcsc/1811142111_Winbond-Elec-W25Q128JVSIQ_C97521.pdf","C97521","0.4692","https://lcsc.com/product-detail/FLASH_Winbond-Elec-W25Q128JVSIQTR_C97521.html","","",""
 U5 ,1,"MIMXRT1011DAE5A","Package_QFP:LQFP-80_12x12mm_P0.5mm","","","","","771-MIMXRT1011DAE5A","2.95","https://www.mouser.se/ProductDetail/NXP-Semiconductors/MIMXRT1011DAE5A?qs=sGAEpiMZZMu0J0Wcc3HWIiQ5ozDtCON8D1H2mpYiapPL1lXa2Q%252BS0A%3D%3D"
 U6 ,1,"MAX803SQ308T1G","Package_TO_SOT_SMD:SOT-323_SC-70","https://datasheet.lcsc.com/szlcsc/1809111625_ON-Semicon-MAX803SQ308T1G_C233650.pdf","C233650","0.1589","https://lcsc.com/product-detail/Microprocessor-Microcontroller-Supervisors_ON-Semicon_MAX803SQ308T1G_ON-Semicon-ON-MAX803SQ308T1G_C233650.html","","",""
-U7 ,1,"SPI RAM LY68L6400SLIT","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","https://datasheet.lcsc.com/szlcsc/1809140531_Lyontek-Inc-LY68L6400SLIT_C261881.pdf","C261881","0.4665","https://lcsc.com/product-detail/RAM_Lyontek-Inc-LY68L6400SLIT_C261881.html","","",""
+U7 U10 ,2,"SPI RAM LY68L6400SLIT","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","https://datasheet.lcsc.com/szlcsc/1809140531_Lyontek-Inc-LY68L6400SLIT_C261881.pdf","C261881","0.4665","https://lcsc.com/product-detail/RAM_Lyontek-Inc-LY68L6400SLIT_C261881.html","","",""
 U8 ,1,"LFE5U-12F-6BG256C","w_smd_bga:cabga256","","","","","842-LFE5U12F6BG256C","4.96","https://www.mouser.se/ProductDetail/Lattice/LFE5U-12F-6BG256C?qs=sGAEpiMZZMvoScKlWpK8TKuuyQ9Pl%252Byu21YKn7%252B9K98%3D"
 U9 ,1,"16MHz 20ppm","Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm","","C387369","0.2984","https://lcsc.com/product-detail/SMD-Oscillators-XO_Shenzhen-SCTF-Elec-S3D16-000000B20F30T_C387369.html","","",""
 Y1 ,1,"24MHz 10ppm","Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm","","C164058","0.0642","https://lcsc.com/product-detail/SMD-Crystal-Resonators_Zhejiang-Abel-Elec-SMD-3225-4P24MHZ12PF10PPM-40-85_C164058.html","","",""
