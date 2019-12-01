@@ -5582,7 +5582,7 @@ L Device:C_Small C11
 U 1 1 5DEDEF83
 P 5700 12900
 F 0 "C11" H 5608 12854 50  0000 R CNN
-F 1 "4p7" H 5608 12945 50  0000 R CNN
+F 1 "20p" H 5608 12945 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 5700 12900 50  0001 C CNN
 F 3 " " H 5700 12900 50  0001 C CNN
 	1    5700 12900
@@ -5593,7 +5593,7 @@ L Device:C_Small C14
 U 1 1 5DF27130
 P 6400 12900
 F 0 "C14" H 6308 12854 50  0000 R CNN
-F 1 "4p7" H 6308 12945 50  0000 R CNN
+F 1 "20p" H 6308 12945 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 6400 12900 50  0001 C CNN
 F 3 " " H 6400 12900 50  0001 C CNN
 	1    6400 12900
@@ -6022,10 +6022,10 @@ Wire Notes Line
 	3350 10200 550  10200
 Text Notes 600  10600 0    197  ~ 39
 Errata
-Text Notes 650  11050 0    50   ~ 0
-RevA 0.1:\n- iMX ROM bootloader freezes because the UART RX pin is pulled\n   low by the FPGA during boot. (FPGA pin is PL35B_VREF_1_6)\n   A 4K7 pull-up is probably not enough, the voltage drops to 2.9V.\n   Workaround: Bodge a 1K pull-up or disconnect pin.\n
+Text Notes 650  11150 0    50   ~ 0
+RevA 0.1:\n- iMX ROM bootloader freezes because the UART RX pin is pulled\n   low by the FPGA during boot. (FPGA pin is PL35B_VREF_1_6)\n   A 4K7 pull-up is probably not enough, the voltage drops to 2.9V.\n   Workaround: Bodge a 1K pull-up or disconnect pin.\n- Wrong load caps for the xtal. Should be 20pF.
 Text Notes 600  12200 0    197  ~ 39
 TODO
-Text Notes 650  13600 0    50   ~ 0
-RevA 0.2:\nTo solve the UART issue:\n- Add strong 1K pull-ups on UART RX and TX lines.\n*or*\n- Add weak pull-ups (10K) and\n   route to another pin, P3? (breaks pin-compatibility)\n\n- Tune LED brightness. 4K7 is nice but still kinda bright.\n- Change footprints for SWD and JTAG.\n   Use JST SM04B-SRSS-TB(LF)(SN)?\n- Use solder-jumpers for boot config.\n   This makes it easier for production.\n   Suggested config:\n   iMX CFG = 000,\n   iMX SRC_BOOT_MODE = 10, (internal)\n   ECP5 CFG = 001 (slave SPI)\n- See if decoupling caps can be moved to top layer only.
+Text Notes 650  13950 0    50   ~ 0
+RevA 0.2:\nTo solve the UART issue:\n- Add strong 1K pull-ups on UART RX and TX lines.\n*or*\n- Add weak pull-ups (10K) and\n   route to another pin, P3? (breaks pin-compatibility)\n\n- Tune LED brightness. 4K7 is nice but still kinda bright.\n- Change footprints for SWD and JTAG.\n   Use JST SM04B-SRSS-TB(LF)(SN)?\n- Use solder-jumpers for boot config.\n   This makes it easier for production.\n   Suggested config:\n   iMX CFG = 000,\n   iMX SRC_BOOT_MODE = 10, (internal)\n   ECP5 CFG = 001 (slave SPI)\n- See if decoupling caps can be moved to top layer only.\n- Add a poly-fuse on 5V in?\n- Optimize BOM:\n* Change 220n to 100n?\n* Change 10K pull-ups to 4K7?
 $EndSCHEMATC
