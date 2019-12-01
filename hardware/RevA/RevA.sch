@@ -6022,10 +6022,10 @@ Wire Notes Line
 	3350 10200 550  10200
 Text Notes 600  10600 0    197  ~ 39
 Errata
-Text Notes 650  10950 0    50   ~ 0
-RevA 0.1:\n- iMX ROM bootloader freezes because the UART RX pin  is pulled\n   low by the FPGA during boot. (pin is PL35B_VREF_1_6)\n   Workaround: Bodge a pull-up or disconnect pin.
+Text Notes 650  11050 0    50   ~ 0
+RevA 0.1:\n- iMX ROM bootloader freezes because the UART RX pin is pulled\n   low by the FPGA during boot. (FPGA pin is PL35B_VREF_1_6)\n   A 4K7 pull-up is probably not enough, the voltage drops to 2.9V.\n   Workaround: Bodge a 1K pull-up or disconnect pin.\n
 Text Notes 600  12200 0    197  ~ 39
 TODO
-Text Notes 650  13350 0    50   ~ 0
-RevA 0.2:\n- Test if adding a strong (1K? 4K7?) pull-up on UART RX solves\n   the issue.\n- Add a strong (1K? 4K7?) pull-up on UART RX and TX lines.\n- Tune LED brightness. 4K7 is nice but still kinda bright.\n- Change footprints for SWD and JTAG.\n   Use JST SM04B-SRSS-TB(LF)(SN)?\n- Use solder-jumpers for boot config.\n   This makes it easier for production.\n   Suggested config:\n   iMX CFG = 000,\n   iMX SRC_BOOT_MODE = 10, (internal)\n   ECP5 CFG = 001 (slave SPI)\n- See if decoupling caps can be moved to top layer only.
+Text Notes 650  13600 0    50   ~ 0
+RevA 0.2:\nTo solve the UART issue:\n- Add strong 1K pull-ups on UART RX and TX lines.\n*or*\n- Add weak pull-ups (10K) and\n   route to another pin, P3? (breaks pin-compatibility)\n\n- Tune LED brightness. 4K7 is nice but still kinda bright.\n- Change footprints for SWD and JTAG.\n   Use JST SM04B-SRSS-TB(LF)(SN)?\n- Use solder-jumpers for boot config.\n   This makes it easier for production.\n   Suggested config:\n   iMX CFG = 000,\n   iMX SRC_BOOT_MODE = 10, (internal)\n   ECP5 CFG = 001 (slave SPI)\n- See if decoupling caps can be moved to top layer only.
 $EndSCHEMATC
