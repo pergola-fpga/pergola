@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Pergola"
 Date "2019-11-16"
-Rev "A 0.2"
+Rev "A 0.2 (wip)"
 Comp "Konrad Beckmann"
 Comment1 "https://pergola.xil.se"
 Comment2 ""
@@ -4091,32 +4091,8 @@ F 6 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_4-7KR-4701-1_C1
 $EndComp
 Wire Wire Line
 	14000 14050 14000 13950
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5DFADC3C
-P 10050 11600
-F 0 "TP1" V 9950 12000 50  0000 C CNN
-F 1 "RX" V 10050 11850 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10250 11600 50  0001 C CNN
-F 3 " " H 10250 11600 50  0001 C CNN
-	1    10050 11600
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	10050 11600 11000 11600
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5E071D2E
-P 10050 11700
-F 0 "TP2" V 10150 12100 50  0000 C CNN
-F 1 "TX" V 10050 11950 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10250 11700 50  0001 C CNN
-F 3 " " H 10250 11700 50  0001 C CNN
-	1    10050 11700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10050 11700 11000 11700
+	9600 11600 9650 11600
 Text Notes 13700 13400 0    50   ~ 0
 ECP5 CFGMDN[2:0]\n001: Slave SPI\n101: Slave Serial\n111: Slave Parallell (N/A)\n010: Master SPI\n\nNote: Use 4K7 for pull-up and <500R for pull-down\nDefault is internal pull-up.
 Text Label 16850 11850 2    50   ~ 0
@@ -5295,7 +5271,7 @@ L Device:R R25
 U 1 1 6094CFD0
 P 9450 4050
 F 0 "R25" V 9400 3850 50  0000 C CNN
-F 1 "4K7" V 9450 4050 39  0000 C CNN
+F 1 "10K" V 9450 4050 39  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9380 4050 50  0001 C CNN
 F 3 " " H 9450 4050 50  0001 C CNN
 	1    9450 4050
@@ -5308,7 +5284,7 @@ L Device:R R26
 U 1 1 609F4FD6
 P 9450 4250
 F 0 "R26" V 9400 4050 50  0000 C CNN
-F 1 "4K7" V 9450 4250 39  0000 C CNN
+F 1 "10K" V 9450 4250 39  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9380 4250 50  0001 C CNN
 F 3 " " H 9450 4250 50  0001 C CNN
 	1    9450 4250
@@ -5319,7 +5295,7 @@ L Device:R R27
 U 1 1 60A91FDE
 P 9450 4450
 F 0 "R27" V 9400 4250 50  0000 C CNN
-F 1 "4K7" V 9450 4450 39  0000 C CNN
+F 1 "10K" V 9450 4450 39  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9380 4450 50  0001 C CNN
 F 3 " " H 9450 4450 50  0001 C CNN
 	1    9450 4450
@@ -5330,7 +5306,7 @@ L Device:R R28
 U 1 1 60B2F03A
 P 9450 4650
 F 0 "R28" V 9400 4450 50  0000 C CNN
-F 1 "4K7" V 9450 4650 39  0000 C CNN
+F 1 "10K" V 9450 4650 39  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9380 4650 50  0001 C CNN
 F 3 " " H 9450 4650 50  0001 C CNN
 	1    9450 4650
@@ -5341,7 +5317,7 @@ L Device:R R29
 U 1 1 60BCBFEE
 P 9450 4850
 F 0 "R29" V 9400 4650 50  0000 C CNN
-F 1 "4K7" V 9450 4850 39  0000 C CNN
+F 1 "10K" V 9450 4850 39  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9380 4850 50  0001 C CNN
 F 3 " " H 9450 4850 50  0001 C CNN
 	1    9450 4850
@@ -5352,7 +5328,7 @@ L Device:R R30
 U 1 1 60C6904A
 P 9450 5050
 F 0 "R30" V 9400 4850 50  0000 C CNN
-F 1 "4K7" V 9450 5050 39  0000 C CNN
+F 1 "10K" V 9450 5050 39  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9380 5050 50  0001 C CNN
 F 3 " " H 9450 5050 50  0001 C CNN
 	1    9450 5050
@@ -5363,7 +5339,7 @@ L Device:R R31
 U 1 1 60D06052
 P 9450 5250
 F 0 "R31" V 9400 5050 50  0000 C CNN
-F 1 "4K7" V 9450 5250 39  0000 C CNN
+F 1 "10K" V 9450 5250 39  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9380 5250 50  0001 C CNN
 F 3 " " H 9450 5250 50  0001 C CNN
 	1    9450 5250
@@ -5374,7 +5350,7 @@ L Device:R R32
 U 1 1 60DA30AE
 P 9450 5450
 F 0 "R32" V 9400 5250 50  0000 C CNN
-F 1 "4K7" V 9450 5450 39  0000 C CNN
+F 1 "10K" V 9450 5450 39  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9380 5450 50  0001 C CNN
 F 3 " " H 9450 5450 50  0001 C CNN
 	1    9450 5450
@@ -5399,7 +5375,7 @@ L Device:R R20
 U 1 1 6174CAD9
 P 11100 4350
 F 0 "R20" V 11050 4150 50  0000 C CNN
-F 1 "4K7" V 11100 4350 39  0000 C CNN
+F 1 "10K" V 11100 4350 39  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 11030 4350 50  0001 C CNN
 F 3 " " H 11100 4350 50  0001 C CNN
 	1    11100 4350
@@ -5412,7 +5388,7 @@ L Device:R R21
 U 1 1 618866BD
 P 11100 4550
 F 0 "R21" V 11050 4350 50  0000 C CNN
-F 1 "4K7" V 11100 4550 39  0000 C CNN
+F 1 "10K" V 11100 4550 39  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 11030 4550 50  0001 C CNN
 F 3 " " H 11100 4550 50  0001 C CNN
 	1    11100 4550
@@ -5425,7 +5401,7 @@ L Device:R R22
 U 1 1 6192298F
 P 11100 4750
 F 0 "R22" V 11050 4550 50  0000 C CNN
-F 1 "4K7" V 11100 4750 39  0000 C CNN
+F 1 "10K" V 11100 4750 39  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 11030 4750 50  0001 C CNN
 F 3 " " H 11100 4750 50  0001 C CNN
 	1    11100 4750
@@ -6027,5 +6003,81 @@ RevA 0.1:\n- iMX ROM bootloader freezes because the UART RX pin is pulled\n   lo
 Text Notes 600  12200 0    197  ~ 39
 TODO
 Text Notes 650  13950 0    50   ~ 0
-RevA 0.2:\nTo solve the UART issue:\n- Add strong 1K pull-ups on UART RX and TX lines.\n*or*\n- Add weak pull-ups (10K) and\n   route to another pin, P3? (breaks pin-compatibility)\n\n- Tune LED brightness. 4K7 is nice but still kinda bright.\n- Change footprints for SWD and JTAG.\n   Use JST SM04B-SRSS-TB(LF)(SN)?\n- Use solder-jumpers for boot config.\n   This makes it easier for production.\n   Suggested config:\n   iMX CFG = 000,\n   iMX SRC_BOOT_MODE = 10, (internal)\n   ECP5 CFG = 001 (slave SPI)\n- See if decoupling caps can be moved to top layer only.\n- Add a poly-fuse on 5V in?\n- Optimize BOM:\n* Change 220n to 100n?\n* Change 10K pull-ups to 4K7?
+RevA 0.2:\n[X] Add strong 1K pull-ups on UART RX and TX lines.\n[X] Tune LED brightness. 10K looks good\n[ ] Fix incorrect RGB LED footprint, pin 1. Also R and G are swapped.\n[ ] Change footprints for SWD and JTAG.\n   Use JST SM04B-SRSS-TB(LF)(SN)?\n[ ] Use solder-jumpers for boot config.\n   This makes it easier for production.\n   Suggested config:\n   iMX CFG = 000,\n   iMX SRC_BOOT_MODE = 10, (internal)\n   ECP5 CFG = 001 (slave SPI)\n[ ] See if decoupling caps can be moved to top layer only.\n[ ] Update Rev A 0.2 text\n[ ] Move the iMX so it's centered instead aligned usb pins?\n[ ] Add a poly-fuse on 5V in?\n\nOptimize BOM:\n[ ] Change 220n to 100n?
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5E071D2E
+P 9600 11700
+F 0 "TP2" V 9600 12100 50  0000 C CNN
+F 1 "TX" V 9600 11950 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9800 11700 50  0001 C CNN
+F 3 " " H 9800 11700 50  0001 C CNN
+	1    9600 11700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5DFADC3C
+P 9600 11600
+F 0 "TP1" V 9600 12000 50  0000 C CNN
+F 1 "RX" V 9600 11850 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9800 11600 50  0001 C CNN
+F 3 " " H 9800 11600 50  0001 C CNN
+	1    9600 11600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R36
+U 1 1 5E18C3EE
+P 9650 11350
+F 0 "R36" H 9700 11200 50  0000 C CNN
+F 1 "1K" V 9650 11350 39  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9580 11350 50  0001 C CNN
+F 3 " " H 9650 11350 50  0001 C CNN
+	1    9650 11350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R37
+U 1 1 5E18CBE6
+P 9750 11350
+F 0 "R37" H 9700 11200 50  0000 C CNN
+F 1 "1K" V 9750 11350 39  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9680 11350 50  0001 C CNN
+F 3 " " H 9750 11350 50  0001 C CNN
+	1    9750 11350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9750 11500 9750 11700
+Connection ~ 9750 11700
+Wire Wire Line
+	9750 11700 11000 11700
+Wire Wire Line
+	9600 11700 9750 11700
+Wire Wire Line
+	9650 11500 9650 11600
+Connection ~ 9650 11600
+Wire Wire Line
+	9650 11600 11000 11600
+$Comp
+L power:+3V3 #PWR0137
+U 1 1 5E3BA75C
+P 9650 11000
+F 0 "#PWR0137" H 9650 10850 50  0001 C CNN
+F 1 "+3V3" H 9665 11173 50  0000 C CNN
+F 2 "" H 9650 11000 50  0001 C CNN
+F 3 "" H 9650 11000 50  0001 C CNN
+	1    9650 11000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 11000 9650 11100
+Wire Wire Line
+	9650 11100 9750 11100
+Wire Wire Line
+	9750 11100 9750 11200
+Connection ~ 9650 11100
+Wire Wire Line
+	9650 11100 9650 11200
 $EndSCHEMATC
