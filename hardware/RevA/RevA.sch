@@ -5998,8 +5998,8 @@ Wire Notes Line
 	3350 10200 550  10200
 Text Notes 600  10600 0    197  ~ 39
 Errata
-Text Notes 650  11150 0    50   ~ 0
-RevA 0.1:\n- iMX ROM bootloader freezes because the UART RX pin is pulled\n   low by the FPGA during boot. (FPGA pin is PL35B_VREF_1_6)\n   A 4K7 pull-up is probably not enough, the voltage drops to 2.9V.\n   Workaround: Bodge a 1K pull-up or disconnect pin.\n- Wrong load caps for the xtal. Should be 20pF.
+Text Notes 650  11250 0    50   ~ 0
+RevA 0.1:\n- iMX ROM bootloader freezes because the UART RX pin is pulled\n   low by the FPGA during boot. (FPGA pin is PL35B_VREF_1_6)\n   A 4K7 pull-up is probably not enough, the voltage drops to 2.9V.\n   Workaround: Bodge a 1K pull-up or disconnect pin.\n- Wrong load caps for the xtal. Should be 20pF.\n- SWD IO and CLK are swapped on the silk.
 Text Notes 600  12200 0    197  ~ 39
 TODO
 Text Notes 650  13950 0    50   ~ 0
