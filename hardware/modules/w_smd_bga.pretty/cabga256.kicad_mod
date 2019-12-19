@@ -287,7 +287,7 @@
   (pad X smd oval (at -7 -7 90) (size 0.127 0.508) (layers F.Cu F.Paste F.Mask))
   (pad X smd oval (at 7 7 90) (size 0.127 0.508) (layers F.Cu F.Paste F.Mask))
   (pad X smd oval (at 7 7) (size 0.127 0.508) (layers F.Cu F.Paste F.Mask))
-  (model ${KIPRJMOD}/../kicad-gigalib/w_smd_bga.pretty/cabga256.wrl
+  (model ${KIPRJMOD}/../modules/w_smd_bga.pretty/cabga256.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

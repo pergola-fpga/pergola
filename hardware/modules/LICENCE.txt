@@ -1,6 +1,43 @@
+Object: Connector_USB_Extra.pretty
+Source URL: https://github.com/arturo182/kicad-modules
+Licence: MIT
+Author: arturo182
+
+Object: ecp5board.pretty
+Licence: MIT
+Author: kbeckmann unless otherwise specified
+
+Object: ecp5board.pretty/L_1008_1210.kicad_mod
+Source URL: https://github.com/emard/ulx3s
+Licence: MIT
+Author: emard
+
+Object: ecp5board.pretty/SOA008-150-208mil.kicad_mod
+Source URL: https://github.com/emard/ulx3s
+Licence: MIT
+Author: emard
+
+Object: packages3D
+Source URL: https://github.com/arturo182/kicad-modules
+Licence: MIT
+Author: arturo182
+
+Object: Package_SON_Extra.pretty
+Source URL: https://github.com/arturo182/kicad-modules
+Licence: MIT
+Author: arturo182
+
+Object: w_smd_bga.pretty
+Source URL: https://github.com/metacollin/kicad-gigalib
+Licence: MIT
+Author: metacollin
+
+
+MIT license:
+
 The MIT License (MIT)
 
-Copyright (c) 2016 metacollin
+Copyright (c) <AUTHOR>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
