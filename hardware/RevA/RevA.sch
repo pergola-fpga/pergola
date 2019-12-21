@@ -6003,7 +6003,7 @@ RevA 0.1:\n- iMX ROM bootloader freezes because the UART RX pin is pulled\n   lo
 Text Notes 600  12200 0    197  ~ 39
 TODO
 Text Notes 650  13950 0    50   ~ 0
-RevA 0.2:\n[X] Add strong 1K pull-ups on UART RX and TX lines.\n[X] Tune LED brightness. 10K looks good\n[ ] Fix incorrect RGB LED footprint, pin 1. Also R and G are swapped.\n[ ] Change footprints for SWD and JTAG.\n   Use JST SM04B-SRSS-TB(LF)(SN)?\n[ ] Use solder-jumpers for boot config.\n   This makes it easier for production.\n   Suggested config:\n   iMX CFG = 000,\n   iMX SRC_BOOT_MODE = 10, (internal)\n   ECP5 CFG = 001 (slave SPI)\n[ ] See if decoupling caps can be moved to top layer only.\n[ ] Update Rev A 0.2 text\n[ ] Move the iMX so it's centered instead aligned usb pins?\n[ ] Add a poly-fuse on 5V in?\n\nOptimize BOM:\n[ ] Change 220n to 100n?
+RevA 0.2:\n[X] Add strong 1K pull-ups on UART RX and TX lines.\n[X] Tune LED brightness. 10K looks good\n[X] Add USB connector TH pads solderpaste layer\n[ ] Fix incorrect RGB LED footprint, pin 1. Also R and G are swapped.\n[ ] Change footprints for SWD and JTAG.\n   Use JST SM04B-SRSS-TB(LF)(SN)?\n[ ] Use solder-jumpers for boot config.\n   This makes it easier for production.\n   Suggested config:\n   iMX CFG = 000,\n   iMX SRC_BOOT_MODE = 10, (internal)\n   ECP5 CFG = 001 (slave SPI)\n[ ] See if decoupling caps can be moved to top layer only.\n[ ] Update Rev A 0.2 text\n[ ] Move the iMX so it's centered instead aligned usb pins?\n[ ] Add a poly-fuse on 5V in?\n\nOptimize BOM:\n[ ] Change 220n to 100n?
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5E071D2E
