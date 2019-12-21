@@ -21,7 +21,7 @@ It has been tested and works if the fixes below are applied.
 - Wrong load caps for the xtal. Should be 20pF.
 - SWD IO and CLK are swapped on the silk.
 - IMX_BOOT_MODE_0 and IMX_BOOT_MODE_1 are swapped on the silk.
-- A 1K pull-down is on the ~FPGA_HOLD~ net to allow the iMX to use the flash exclusively during boot-up.
+- A 1K pull-down is on the `~FPGA_HOLD~` net to allow the iMX to use the flash exclusively during boot-up.
 
 # Firmware
 TODO.
