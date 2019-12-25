@@ -34,5 +34,4 @@ Currently working on porting the UF2 bootloader in order to update the firmware 
 
 Feel free to submit a PR, create an issue.
 
-Discussion happens on $TBD. You can ping [@kbeckmann](https://twitter.com/kbeckmann) on Twitter until this is sorted out.
-
+Discussion happens on [Gitter](https://gitter.im/pergola-fpga/Lobby) for the time being. You can also ping [@kbeckmann](https://twitter.com/kbeckmann) on Twitter.
