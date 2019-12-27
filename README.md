@@ -30,6 +30,61 @@ Currently I have a very ugly test project that can be loaded into the iMX's RAM 
 
 Currently working on porting the UF2 bootloader in order to update the firmware easily using USB and not having to use the SWD pins.
 
+Current *horrible* hack is located over at [git.xil.se](https://git.xil.se/kbeckmann/pergola_fw) and contains a prebuilt binary.
+
+The firmware will expose a cdc_acm device over USB. To program a bitstream, you simply have to write the number of bytes it is, followed by a newline (`\n`), followed by the bitstream.
+
+# Getting started
+
+- Clone my fork of the imx usb loader project:
+```
+git clone https://github.com/kbeckmann/imx_usb_loader && cd imx_usb_loader
+```
+- Checkout the `imxrt1010` branch:
+```
+git checkout imxrt1010
+```
+- Build it:
+```
+make
+```
+- Clone this repository and change to the firmware directory:
+```
+cd .. && git clone https://github.com/pergola-fpga/pergola && cd pergola/firmware
+```
+- Run the loader:
+```
+../../imx_usb_loader
+```
+. You might have to run it with `sudo`.
+- Check `dmesg` to see if you got a cdc_acm device, e.g. `ttyACM0`
+- Now you'll be able to send a bitstream to the board:
+```
+export ACM_DEVICE=/dev/ttyACM0
+export PROGRAM_BIN=path/to/your/top.bin
+
+# If you don't have setup udev rules
+sudo chown $UID:$GID $ACM_DEVICE
+
+# Configure the ACM device to be raw, this prevents weird stuff from happening when we send raw binary data.
+stty -F $ACM_DEVICE 300 raw -clocal -echo icrnl;
+sleep 0.01;
+cat $ACM_DEVICE &;
+echo -n "$(stat -c%s $PROGRAM_BIN)\n" > $ACM_DEVICE;
+cp $PROGRAM_BIN $ACM_DEVICE; sync
+```
+
+- This should generate the following output more or less:
+```
+Reading 582369 bytes
+READ_ID: ff ff ff ff 21 11 10 43
+
+Done programming. FPGA_DONE=1
+P E R G O L A
+
+<bytes to load><\n>; Load bitstream to FPGA SRAM
+```
+
 # How to contribute
 
 Feel free to submit a PR, create an issue.
