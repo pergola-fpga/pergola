@@ -48,13 +48,13 @@ git checkout imxrt1010
 ```
 make
 ```
-- Clone this repository and change to the firmware directory:
+- Clone this repository and change to the firmware directory: (firmware is built from https://git.xil.se/kbeckmann/pergola_fw)
 ```
 cd .. && git clone https://github.com/pergola-fpga/pergola && cd pergola/firmware
 ```
 - Run the loader:
 ```
-../../imx_usb_loader
+../../imx_usb_loader/imx_usb
 ```
 . You might have to run it with `sudo`.
 - Check `dmesg` to see if you got a cdc_acm device, e.g. `ttyACM0`
