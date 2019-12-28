@@ -85,6 +85,8 @@ P E R G O L A
 <bytes to load><\n>; Load bitstream to FPGA SRAM
 ```
 
+- There is also an nmigen board definition in gateware/nmigen_wip/pergola.py
+
 # How to contribute
 
 Feel free to submit a PR, create an issue.
