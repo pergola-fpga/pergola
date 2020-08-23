@@ -92,50 +92,6 @@ F 3 " " H 8950 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H1
-U 1 1 5DAC6FCA
-P 17800 15550
-F 0 "H1" H 17900 15596 50  0000 L CNN
-F 1 "DNP" H 17900 15505 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm" H 17800 15550 50  0001 C CNN
-F 3 " " H 17800 15550 50  0001 C CNN
-	1    17800 15550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5DAC7771
-P 17800 15750
-F 0 "H2" H 17900 15796 50  0000 L CNN
-F 1 "DNP" H 17900 15705 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm" H 17800 15750 50  0001 C CNN
-F 3 " " H 17800 15750 50  0001 C CNN
-	1    17800 15750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5DAC7F79
-P 18250 15750
-F 0 "H4" H 18350 15796 50  0000 L CNN
-F 1 "DNP" H 18350 15705 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm" H 18250 15750 50  0001 C CNN
-F 3 " " H 18250 15750 50  0001 C CNN
-	1    18250 15750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 5DAC8373
-P 18250 15550
-F 0 "H3" H 18350 15596 50  0000 L CNN
-F 1 "DNP" H 18350 15505 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm" H 18250 15550 50  0001 C CNN
-F 3 " " H 18250 15550 50  0001 C CNN
-	1    18250 15550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Lattice_ECP5_LFE5U-cabga256:LFE5U-12F-6BG256C U8
 U 1 1 5DB1D5C1
 P 17750 5600
@@ -786,17 +742,6 @@ F 3 "" H 1500 9700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1200 9200 1200 9250
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J4
-U 1 1 5DEFDC14
-P 13400 3400
-F 0 "J4" H 13450 3717 50  0000 C CNN
-F 1 "DNP Conn_02x03_Odd_Even" H 13450 3626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 13400 3400 50  0001 C CNN
-F 3 " " H 13400 3400 50  0001 C CNN
-	1    13400 3400
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR079
 U 1 1 5DEFFFD3
@@ -3511,39 +3456,6 @@ NoConn ~ 21500 4700
 NoConn ~ 21550 9150
 NoConn ~ 21550 9050
 $Comp
-L Graphic:Logo_Open_Hardware_Small LOGO1
-U 1 1 5DDB4636
-P 17200 15650
-F 0 "LOGO1" H 17200 15925 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 17200 15425 50  0001 C CNN
-F 2 "Symbol:OSHW-Logo_5.7x6mm_SilkScreen" H 17200 15650 50  0001 C CNN
-F 3 "~" H 17200 15650 50  0001 C CNN
-	1    17200 15650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Graphic:Logo_Open_Hardware_Small LOGO2
-U 1 1 5DE75DAA
-P 16750 15650
-F 0 "LOGO2" H 16750 15925 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 16750 15425 50  0001 C CNN
-F 2 "ecp5board:logo" H 16750 15650 50  0001 C CNN
-F 3 "~" H 16750 15650 50  0001 C CNN
-	1    16750 15650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Graphic:Logo_Open_Hardware_Small LOGO3
-U 1 1 5DF8D651
-P 16300 15650
-F 0 "LOGO3" H 16300 15925 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 16300 15425 50  0001 C CNN
-F 2 "ecp5board:xil_logo_new" H 16300 15650 50  0001 C CNN
-F 3 "~" H 16300 15650 50  0001 C CNN
-	1    16300 15650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Memory_Flash:W25Q32JVSS U10
 U 1 1 5E93B79C
 P 13800 10250
@@ -4438,17 +4350,6 @@ F 3 "" H 9450 14700 50  0001 C CNN
 	1    9450 14700
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x02_Odd_Even J2
-U 1 1 5E68B449
-P 9850 14800
-F 0 "J2" H 9850 14600 50  0000 C CNN
-F 1 "DNP Conn_02x02_Odd_Even" H 9850 14950 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD" H 9850 14800 50  0001 C CNN
-F 3 " " H 9850 14800 50  0001 C CNN
-	1    9850 14800
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	10750 14800 10750 14400
 Wire Wire Line
@@ -4820,4 +4721,103 @@ NoConn ~ 17100 8000
 NoConn ~ 17100 8100
 NoConn ~ 17100 8200
 NoConn ~ 17100 8300
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J4
+U 1 1 5DEFDC14
+P 13400 3400
+F 0 "J4" H 13450 3717 50  0000 C CNN
+F 1 "DNP Conn_02x03_Odd_Even" H 13450 3626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 13400 3400 50  0001 C CNN
+F 3 " " H 13400 3400 50  0001 C CNN
+	1    13400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J2
+U 1 1 5E68B449
+P 9850 14800
+F 0 "J2" H 9850 14600 50  0000 C CNN
+F 1 "DNP Conn_02x02_Odd_Even" H 9850 14950 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD" H 9850 14800 50  0001 C CNN
+F 3 " " H 9850 14800 50  0001 C CNN
+	1    9850 14800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5DAC7F79
+P 18250 15750
+F 0 "H4" H 18350 15796 50  0000 L CNN
+F 1 "DNP" H 18350 15705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 18250 15750 50  0001 C CNN
+F 3 " " H 18250 15750 50  0001 C CNN
+	1    18250 15750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5DAC8373
+P 18250 15550
+F 0 "H3" H 18350 15596 50  0000 L CNN
+F 1 "DNP" H 18350 15505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 18250 15550 50  0001 C CNN
+F 3 " " H 18250 15550 50  0001 C CNN
+	1    18250 15550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5DAC7771
+P 17800 15750
+F 0 "H2" H 17900 15796 50  0000 L CNN
+F 1 "DNP" H 17900 15705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 17800 15750 50  0001 C CNN
+F 3 " " H 17800 15750 50  0001 C CNN
+	1    17800 15750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5DAC6FCA
+P 17800 15550
+F 0 "H1" H 17900 15596 50  0000 L CNN
+F 1 "DNP" H 17900 15505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 17800 15550 50  0001 C CNN
+F 3 " " H 17800 15550 50  0001 C CNN
+	1    17800 15550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 5DDB4636
+P 17200 15650
+F 0 "LOGO1" H 17200 15925 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 17200 15425 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo_5.7x6mm_SilkScreen" H 17200 15650 50  0001 C CNN
+F 3 "~" H 17200 15650 50  0001 C CNN
+	1    17200 15650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO2
+U 1 1 5DE75DAA
+P 16750 15650
+F 0 "LOGO2" H 16750 15925 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 16750 15425 50  0001 C CNN
+F 2 "ecp5board:logo" H 16750 15650 50  0001 C CNN
+F 3 "~" H 16750 15650 50  0001 C CNN
+	1    16750 15650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO3
+U 1 1 5DF8D651
+P 16300 15650
+F 0 "LOGO3" H 16300 15925 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 16300 15425 50  0001 C CNN
+F 2 "ecp5board:xil_logo_new" H 16300 15650 50  0001 C CNN
+F 3 "~" H 16300 15650 50  0001 C CNN
+	1    16300 15650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
