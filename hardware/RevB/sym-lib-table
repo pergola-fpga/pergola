@@ -1,0 +1,12 @@
+(sym_lib_table
+  (lib (name MCU_Microchip_SAMD_Extra)(type Legacy)(uri ${KIPRJMOD}/../symbols/MCU_Microchip_SAMD_Extra.lib)(options "")(descr ""))
+  (lib (name Memory_Flash_Extra)(type Legacy)(uri ${KIPRJMOD}/../symbols/Memory_Flash_Extra.lib)(options "")(descr ""))
+  (lib (name dsc6001ci2a)(type Legacy)(uri ${KIPRJMOD}/../symbols/dsc6001ci2a-016.0000t.lib)(options "")(descr ""))
+  (lib (name Lattice_ECP5_LFE5U-cabga256)(type Legacy)(uri ${KIPRJMOD}/../symbols/Lattice_ECP5_LFE5U-cabga256.lib)(options "")(descr ""))
+  (lib (name TPS65261)(type Legacy)(uri ${KIPRJMOD}/../symbols/TPS65261.lib)(options "")(descr ""))
+  (lib (name MIMXRT1011DAE5A)(type Legacy)(uri ${KIPRJMOD}/../symbols/MIMXRT1011DAE5A.lib)(options "")(descr ""))
+  (lib (name MAX803)(type Legacy)(uri ${KIPRJMOD}/../symbols/MAX803.lib)(options "")(descr ""))
+  (lib (name XC6206P25)(type Legacy)(uri ${KIPRJMOD}/../symbols/XC6206P25.lib)(options "")(descr ""))
+  (lib (name SY8120B1ABC)(type Legacy)(uri ${KIPRJMOD}/../symbols/SY8120B1ABC.lib)(options "")(descr ""))
+  (lib (name ATSAMD21G18A-AUT)(type Legacy)(uri ${KIPRJMOD}/../symbols/ATSAMD21G18A-AUT.lib)(options "")(descr ""))
+)

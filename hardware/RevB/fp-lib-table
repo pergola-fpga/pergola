@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name Connector_USB_Extra)(type KiCad)(uri ${KIPRJMOD}/../modules/Connector_USB_Extra.pretty)(options "")(descr ""))
+  (lib (name Package_SON_Extra)(type KiCad)(uri ${KIPRJMOD}/../modules/Package_SON_Extra.pretty)(options "")(descr ""))
+  (lib (name ecp5board)(type KiCad)(uri ${KIPRJMOD}/../modules/ecp5board.pretty)(options "")(descr ""))
+  (lib (name w_smd_bga)(type KiCad)(uri ${KIPRJMOD}/../modules/w_smd_bga.pretty)(options "")(descr ""))
+)
